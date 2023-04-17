@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* estilos globales */
+
+.padding-top-10 {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+p{
+  color: #cecece;
+  font-weight: bold;
+}
+
+/*
+HEADER
+*/
+header {
+  /* background-color: rgb(234, 234, 234); */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.logo img {
+  height: 65px;
+  transition: all 0.3s;
+}
+.logo img:hover {
+  height: 65px;
+  box-shadow: 5px 5px 5px rgb(247, 244, 152);
+}
+
+.nav {
+  width: 100%;
+  padding-right: 5%;
+}
+.nav-menu-container {
+  display: flex;
+  justify-content: end;
+}
+.link-container {
+  text-align: center;
+  padding: 10px;
+}
+
+/* MENU SVG ICONS - SELECTED - NON SELECTED */
+header .nav .nav-menu-container .link-container svg {
+  height: 38px;
+  width: 38px;
+}
+header .user-login svg {
+  height: 38px;
+  width: 38px;
+}
+header svg:hover {
+  box-shadow: 5px 5px 5px rgb(247, 244, 152);
+}
+.menu-selected {
+  fill: #f7f498;
+}
+.menu-non-selected {
+  fill: #cecece;
+}
+header .user-login {
+  height: 100%;
+  padding-top: 17px;
+}
+/* Busqueda */
+header .nav .search-products {
+  color: #cecece;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+header .nav .search-products input {
+  width: 50%;
+  font-style: italic;
+  text-align: center;
+  border: 0.5px solid #e2e2e2;
+  border-style: dashed;
+}
+
+/*
+SECCION MAIN 
+*/
+main{
+  padding: 10px 10%;
+}
+
+main .section-title {
+  background-color: rgb(72, 72, 72);
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+main .section-title svg{
+  /* fill: #fc0202; */
+  padding-left: 5px;
+  height:18px;
+  width: 18px;
+}
+main .section-title .svg-store{
+  fill: #f7f498;
+
+}
+main .section-title .svg-promo{
+  fill: #ff0000;
+
+}
+
+section {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+
+section .section-card{
+  /* border: 1px solid #cecece; */
+  /* border: 1px solid #f7e593; */
+  background-color: #f8f6f6;
+  width: 260px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+
+/* 
+FOOTER
+*/
+footer {
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  justify-content: center;
+  background-color: #f7f498;
+}
+footer .copyright{
+  text-align: center;
+
+}
+
+footer p svg{
+  padding-top: 5px;
+  fill-opacity: 50%;
+  height:18px;
+  width: 18px;
+}
+
+footer .footer-social-media{
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  height: 25px;
+  transition: all 0.3s;
+}
+
+footer a img:hover {
+  height: 33px;
+  box-shadow: 2px 2px 1px #708090;
+}
+
+/* contenido de la web */
+
+/* main {} */
