@@ -1,174 +1,496 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiTiendaLibre.ar</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google fonts icons -->
+    <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>MiTiendaLibre.ar</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="assets/logo.png" alt="logo" />
-      </div>
-      <div class="nav">
-        <div class="nav-menu-container">
-          <div class="link-container">
+      <img class="logo-img" src="assets/logo.png" alt="MiTiendalibre.ar" />
+      <div class="menu-container">
+        <ul>
+          <li>
             <a href="index.html">
-              <p>Portada</p>
-              <svg
-                class="menu-selected"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 96 960 960"
-              >
-                <path
-                  d="M160 936V456l320-240 320 240v480H560V656H400v280H160Z"
-                />
-              </svg>
+              <div class="container-link link-selected">
+                <p>Portada</p>
+                <svg
+                  class="img-link-selected icon-home"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M160 936V456l320-240 320 240v480H560V656H400v280H160Z"
+                  />
+                </svg>
+              </div>
             </a>
-          </div>
-          <div class="link-container">
-            <a href="pages/tiendas.html">
-              <p>Tiendas</p>
-              <svg
-                class="menu-non-selected"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 96 960 960"
-              >
-                <path
-                  d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="link-container">
-            <a href="pages/register-tienda.html">
-              <p>Quiero!</p>
-              <svg
-                class="menu-non-selected"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 96 960 960"
-              >
-                <path
-                  d="M721 1010V889H601v-60h120V709h60v120h120v60H781v121h-60ZM110 889V644H60v-60l44-202h590l46 207v55h-49v155h-60V644H426v245H110Zm60-60h196V644H170v185Zm-66-507v-60h592v60H104Z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- busqueda -->
-        <div class="search-products">
-          <input placeholder="Buscar un producto..." />
-        </div>
-      </div>
+          </li>
 
-      <div class="user-login">
-        <a href="pages/login.html">
-          <p>Login</p>
-          <svg
-            class="menu-non-selected"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 96 960 960"
-          >
-            <path
-              d="M489 936v-60h291V276H489v-60h291q24 0 42 18t18 42v600q0 24-18 42t-42 18H489Zm-78-185-43-43 102-102H120v-60h348L366 444l43-43 176 176-174 174Z"
-            />
-          </svg>
-        </a>
+          <li>
+            <a href="pages/tiendas.html">
+              <div class="container-link link-non-selected">
+                <p>Tiendas</p>
+                <svg
+                  class="img-link-non-selected icon-shops"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="container-link link-non-selected">
+                <p>Quiero!</p>
+                <svg
+                  class="img-link-non-selected icon-quiero"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M721 1010V889H601v-60h120V709h60v120h120v60H781v121h-60ZM110 889V644H60v-60l44-202h590l46 207v55h-49v155h-60V644H426v245H110Zm60-60h196V644H170v185Zm-66-507v-60h592v60H104Z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="pages/contacto.html">
+              <div class="container-link link-non-selected">
+                <p>Contacto</p>
+                <svg
+                  class="img-link-non-selected icon-contact"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"
+                  />
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
-    <!-- Main -->
     <main>
-      <!-- TIENDAS -->
-      <div class="section-title">
-        <p>NUEVAS TIENDAS</p>
-        <svg class="svg-store"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 96 960 960"
-      >
-        <path
-          d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
-        />
-      </svg>
+      <div class="main-title">
+        <p>Nuevas Tiendas</p>
+        <svg
+          class="svg-store"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 96 960 960"
+        >
+          <path
+            d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
+          />
+        </svg>
       </div>
       <section>
-        <div class="section-card">
-          <p>Tienda 1</p>
+        <!-- TIENDA 1 Dexter -->
+        <div class="store-card">
+          <div class="content">
+            <h3>Dexter</h3>
+            <div class="svg-share-container">
+              <a href="#">
+                <svg
+                  class="svg-share"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Logo de la tienda -->
+          <div class="store-card-main-container">
+            <div class="store-card-logo-container">
+              <a href="pages/tienda-dexter.html">
+                <img src="assets/tienda1-logo.png" alt="" />
+              </a>
+            </div>
+            <!-- Tags -->
+            <div class="store-card-tags-container">
+              <!-- <p class="store-card-description">Indumenteria deportiva</p> -->
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="M480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-83 31.5-155.5t86-127Q252 239 325 207.5T480 176q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880 576q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480 976Zm205-493 69-24 18-64q-34-53-84-90.5T575 247l-65 43v70l175 123Zm-409 0 174-123v-70l-64-43q-63 20-113 57.5T189 395l22 64 65 24Zm-54 320 60-7 39-65-62-191-71-24-48 39q0 72 16 131.5T222 803Zm258 113q27 0 54.5-5t57.5-13l33-72-32-55H368l-32 55 33 72q26 8 55 13t56 5ZM374 711h208l61-183-163-117-166 117 60 183Zm365 92q49-57 65-116.5T820 555l-48-33-70 18-62 191 38 65 61 7Z"
+                />
+              </svg>
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="m352 1050-50-30 128-218-82-49-75 121-50-30 229-371q-42-37-63-80.5T368 301q0-38 7.5-70t26.5-70l52 28q-14 29-20 54.5t-6 51.5q0 48 23 87t77 71l97 57q57 33 84.5 81.5T737 703q0 39-12 79t-32 76l-52-30q17-32 26.5-62.5T677 703q0-38-13-69.5T625 585l-273 465Zm285-608q-30 0-51.5-21.5T564 369q0-30 21.5-51.5T637 296q30 0 51.5 21.5T710 369q0 30-21.5 51.5T637 442Zm-94-186q-26 0-43-17t-17-43q0-26 17-43t43-17q26 0 43 17t17 43q0 26-17 43t-43 17Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="store-card-description">
+            <p>Indumentaria deportiva</p>
+          </div>
         </div>
-        <div class="section-card">
-          <p>Tienda 2</p>
+
+        <!-- TIENDA 2 Fravega -->
+        <div class="store-card">
+          <div class="content">
+            <h3>Fravega</h3>
+            <div class="svg-share-container">
+              <a href="#">
+                <svg
+                  class="svg-share"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Logo de la tienda -->
+          <div class="store-card-main-container">
+            <div class="store-card-logo-container">
+              <a href="pages/tienda-fravega.html">
+                <img src="assets/fravega-logo.png" alt="" />
+              </a>
+            </div>
+            <!-- Tags -->
+            <div class="store-card-tags-container">
+              <!-- <p class="store-card-description">Indumenteria deportiva</p> -->
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="M57 896q-23.513 0-40.256-17.625Q0 860.75 0 836h141q-24 0-42-18t-18-42V276q0-24 18-42t42-18h678q24 0 42 18t18 42v500q0 24-18 42t-42 18h141q0 25-17.625 42.5T900 896H57Zm423-22q14.45 0 24.225-9.775Q514 854.45 514 840q0-14.45-9.775-24.225Q494.45 806 480 806q-14.45 0-24.225 9.775Q446 825.55 446 840q0 14.45 9.775 24.225Q465.55 874 480 874Zm-339-98h678V276H141v500Zm0 0V276v500Z"
+                />
+              </svg>
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="m383 706 267-170-267-170v340Zm-53 230v-80H140q-24 0-42-18t-18-42V276q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H630v80H330ZM140 796h680V276H140v520Zm0 0V276v520Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="store-card-description">
+            <p>Electro-Tecno-Hogar</p>
+          </div>
         </div>
-        <div class="section-card">
-          <p>Tienda 3</p>
-        </div>
-        <div class="section-card">
-          <p>Tienda 4</p>
+
+        <!-- TIENDA 1 Samsung -->
+        <div class="store-card">
+          <div class="content">
+            <h3>Samsung</h3>
+            <div class="svg-share-container">
+              <a href="#">
+                <svg
+                  class="svg-share"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 960 960"
+                >
+                  <path
+                    d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Logo de la tienda -->
+          <div class="store-card-main-container">
+            <div class="store-card-logo-container">
+              <a href="pages/tienda-samsung.html">
+                <img src="assets/Samsung_Logo.png" alt="" />
+              </a>
+            </div>
+            <!-- Tags -->
+            <div class="store-card-tags-container">
+              <!-- <p class="store-card-description">Indumenteria deportiva</p> -->
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="M260 1016q-24 0-42-18t-18-42V196q0-24 18-42t42-18h440q24 0 42 18t18 42v760q0 24-18 42t-42 18H260Zm0-150v90h440v-90H260Zm220.175 75q12.825 0 21.325-8.675 8.5-8.676 8.5-21.5 0-12.825-8.675-21.325-8.676-8.5-21.5-8.5-12.825 0-21.325 8.675-8.5 8.676-8.5 21.5 0 12.825 8.675 21.325 8.676 8.5 21.5 8.5ZM260 806h440V286H260v520Zm0-580h440v-30H260v30Zm0 640v90-90Zm0-640v-30 30Z"
+                />
+              </svg>
+              <svg
+                class="svg-tags-icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 96 960 960"
+              >
+                <path
+                  d="M314.947 936Q234 936 177 878.963 120 821.925 120 741V318q0-42 36-72t78-30q42 0 78 36t36 78q0 46-34 80t-80 34h-54v297q0 57 39 96t96 39q57 0 96-39t39-96V410q0-80.51 57.053-137.255Q564.106 216 645.053 216T783 272.745Q840 329.49 840 410v411q0 47-28 81t-74.5 34q-46.5 0-86-34T612 821.5q0-46.5 33.5-80.5t79.5-34h55V410q0-55.833-39.323-94.917Q701.353 276 645.176 276 589 276 549.5 315.083 510 354.167 510 410v331q0 80.925-57.053 137.963Q395.894 936 314.947 936ZM180 384h54q21 0 38-16.5t17-37.5q0-21-17-37.5T234 276q-21 0-37.5 16.5T180 330v54Zm545.5 492q21.5 0 37.5-16.5t16-38.5v-54h-54q-21 0-37 16.5t-16 38q0 21.5 16 38t37.5 16.5Zm-1.5-56ZM236 328Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="store-card-description">
+            <p>Smartphones, SmartTV</p>
+          </div>
         </div>
       </section>
 
-      <div class="section-title">
-        <p>PROMOCIONES</p>
-        <svg class="svg-promo" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
+      <div class="main-title">
+        <p>Promociones</p>
+        <svg
+          class="svg-fire"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 96 960 960"
+        >
           <path
             d="M160 656q0-105 50-187t110-138q60-56 110-85.5l50-29.5v132q0 37 25 58.5t56 21.5q17 0 32.5-7t28.5-23l18-22q72 42 116 116.5T800 656q0 95-49 171.5T622 943q23-26 35.5-58t12.5-67q0-38-14-71.5T615 686L480 554 346 686q-28 27-42 60.5T290 818q0 35 12.5 67t35.5 58q-80-39-129-115.5T160 656Zm320-18 92 90q18 18 28 41t10 49q0 53-38 90.5T480 946q-54 0-92-37.5T350 818q0-26 9.5-49t28.5-41l92-90Z"
           />
         </svg>
       </div>
-
       <section>
-        <div class="section-card">
-          <p>Promo1</p>
+        <!-- Promo 1 -->
+        <div class="promo-card">
+          <div class="promo-card-main-container">
+            <div class="promo-card-image-container">
+              <a href="pages/product.html">
+                <img src="/assets/product-1.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="promo-card-price-and-tags">
+              <div class="promo-card-svg-share-container">
+                <a href="#">
+                  <svg
+                    class="promo-card-svg-share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="promo-card-price-and-tags-price">$ 22.500</p>
+              <div class="promo-card-price-and-tags-seller">
+                <div class="promo-card-price-and-tags-seller-img">
+                  <svg
+                    class="promo-card-svg-store"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
+                    />
+                  </svg>
+                  <p class="seller-name">Dexter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-card-details">
+            <p>Zapatilla Running</p>
+          </div>
         </div>
-        <div class="section-card">
-          <p>Promo2</p>
+        
+        <!-- Promo 2 -->
+        <div class="promo-card">
+          <div class="promo-card-main-container">
+            <div class="promo-card-image-container">
+              <a href="pages/product.html">
+                <img src="/assets/auricular-rgb_redragon-pandora.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="promo-card-price-and-tags">
+              <div class="promo-card-svg-share-container">
+                <a href="#">
+                  <svg
+                    class="promo-card-svg-share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="promo-card-price-and-tags-price">$ 22.500</p>
+              <div class="promo-card-price-and-tags-seller">
+                <div class="promo-card-price-and-tags-seller-img">
+                  <svg
+                    class="promo-card-svg-store"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
+                    />
+                  </svg>
+                  <p class="seller-name">Fravega</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-card-details">
+            <p>Auriculares RGB Redragon Pandora</p>
+          </div>
         </div>
-        <div class="section-card">
-          <p>Promo3</p>
-        </div>
-        <div class="section-card">
-          <p>Promo4</p>
+
+        <!-- Promo 3 -->
+        <div class="promo-card">
+          <div class="promo-card-main-container">
+            <div class="promo-card-image-container">
+              <a href="pages/product.html">
+                <img src="/assets/samsung-neo-qled-65.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="promo-card-price-and-tags">
+              <div class="promo-card-svg-share-container">
+                <a href="#">
+                  <svg
+                    class="promo-card-svg-share"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M727 976q-47.5 0-80.75-33.346Q613 909.307 613 861.669q0-6.669 1.5-16.312T619 828L316 652q-15 17-37 27.5T234 690q-47.5 0-80.75-33.25T120 576q0-47.5 33.25-80.75T234 462q23 0 44 9t38 26l303-174q-3-7.071-4.5-15.911Q613 298.25 613 290q0-47.5 33.25-80.75T727 176q47.5 0 80.75 33.25T841 290q0 47.5-33.25 80.75T727 404q-23.354 0-44.677-7.5T646 372L343 540q2 8 3.5 18.5t1.5 17.741q0 7.242-1.5 15Q345 599 343 607l303 172q15-14 35-22.5t46-8.5q47.5 0 80.75 33.25T841 862q0 47.5-33.25 80.75T727 976Zm.035-632Q750 344 765.5 328.465q15.5-15.535 15.5-38.5T765.465 251.5q-15.535-15.5-38.5-15.5T688.5 251.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm-493 286Q257 630 272.5 614.465q15.5-15.535 15.5-38.5T272.465 537.5q-15.535-15.5-38.5-15.5T195.5 537.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5Zm493 286Q750 916 765.5 900.465q15.5-15.535 15.5-38.5T765.465 823.5q-15.535-15.5-38.5-15.5T688.5 823.535q-15.5 15.535-15.5 38.5t15.535 38.465q15.535 15.5 38.5 15.5ZM727 290ZM234 576Zm493 286Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="promo-card-price-and-tags-price">$ 22.500</p>
+              <div class="promo-card-price-and-tags-seller">
+                <div class="promo-card-price-and-tags-seller-img">
+                  <svg
+                    class="promo-card-svg-store"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 96 960 960"
+                  >
+                    <path
+                      d="M165 323v-60h632v60H165Zm5 567V645h-49v-60l44-202h631l44 202v60h-49v245h-60V645H552v245H170Zm60-60h262V645H230v185Z"
+                    />
+                  </svg>
+                  <p class="seller-name">Samsung</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-card-details">
+            <p>Televisor Neo Qled 65'</p>
+          </div>
         </div>
       </section>
+
+
     </main>
-    <footer>
-      <p class="copyright">
-        MiTiendalibre.ar - Copyright
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
-          <path
-            d="M393 736h173q14 0 20.5-9.5T593 703v-73h-60v46H426V476h107v47h60v-73q0-14-6.5-24T566 416H393q-14 0-20.5 10t-6.5 24v253q0 14 6.5 23.5T393 736Zm87 240q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-83 31.5-156t86-127Q252 239 325 207.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82-31.5 155T763 858.5q-54 54.5-127 86T480 976Z"
-          />
-        </svg>
-        2023
-      </p>
-      <div class="footer-social-media">
-        <a href="#">
-          <img
-            class="padding-top-10"
-            src="assets/facebook-logo.png"
-            alt="Facebook Social Media"
-          />
-        </a>
-        <a href="#">
-          <img
-            class="padding-top-10"
-            src="assets/instagram-logo-2.png"
-            alt="Instagram Social Media"
-          />
-        </a>
-        <a href="#">
-          <img
-            class="padding-top-10"
-            src="assets/linkedin-logo.png"
-            alt="Linkedin Social Media"
-          />
-        </a>
-      </div>
-    </footer>
+          <footer class="footer-color">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2">Portada</a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/tiendas.html" class="nav-link px-2">Tiendas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2">Quiero!</a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/contacto.html" class="nav-link px-2">Contacto</a>
+          </li>
+        </ul>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="#Instagram" class="nav-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Linkedin" class="nav-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#Facebook" class="nav-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="text-center footer-color">
+          © 2023 MiTiendaLibre.ar <i class="bi bi-shop"></i>
+        </p>
+      </footer>
+    <!-- script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
