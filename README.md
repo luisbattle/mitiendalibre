@@ -22,7 +22,7 @@ Sitio Web:
 
 ```
 Martes 23-05
-branch: feature/segunda-entrega
+branch: segunda-entrega
 
 Mejoras/Features:
 - Home renovado
