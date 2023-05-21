@@ -246,7 +246,7 @@ Promociones
   margin: 10px;
 }
 
-.promo-card:hover {
+.store-card:hover {
   transition: all 0.3s;
   opacity: 100%;
   transform: translateY(-5px);
@@ -386,7 +386,7 @@ Promociones
   object-fit:contain;
   height: 50px;
 }
-.store-info-store-logo p {
+.store-info-store-logo a {
   align-self: center;
   color: #808080;
 }
