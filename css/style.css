@@ -82,9 +82,6 @@ Tiendas
   align-items: center;
 }
 
-/* Tienda descripcion */
-
-
 /* SVGs */
 .svg-store {
   fill: #ffff00;
@@ -352,13 +349,34 @@ Promociones
   align-items: center;
 }
 
-/* VISTA PRODUCTOS */
-.product-image{
+
+/* VISTA PRODUCTO */
+
+.product-title {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: #bab9b9;
+  display: flex;
+  justify-content: center;
+  
+}
+.product-title p {
+  margin: 0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+
+.product-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+.product-price{
+color: #008000;
+font-size:x-large;
+font-weight: bolder;
+}
 
 /* FOOTER */
 footer {
@@ -442,6 +460,14 @@ mobile first
   }
   .icon-contact{
     display: none;
+  }
+  /* Vista Producto */
+  .product-title {
+    height: 50px;
+  }
+  .product-title p{
+    font-size:large;
+    font-weight: bold;
   }
 
   
