@@ -246,7 +246,7 @@ Promociones
   margin: 10px;
 }
 
-.store-card:hover {
+.promo-card:hover {
   transition: all 0.3s;
   opacity: 100%;
   transform: translateY(-5px);
