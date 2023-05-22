@@ -114,41 +114,43 @@
 
     <main>
       <div class="main-title">
-        <p>Dejanos tus comentarios o consultas aqui</p>
+        <p>Contacto</p>
       </div>
       <section>
         <!-- VISTA CONTACTO -->
+        <div class="contact-container">
+          <form class="row rounded p-5">
+            <div class="col-md-6">
+              <label for="inputNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+            <div class="col-md-6">
+              <label for="inputApellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputApellido">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="email@here.com">
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">Tipo de consulta</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Recomendacion/Mejoras</option>
+                <option>Quiero una demo...</option>
+                <option>Otros</option>
+              </select>
+            </div>
+            <div class="col-mb-3">
+              <label for="inputComments">Deja tus comentarios aqui</label>
+              <textarea class="form-control" name="" id="" rows="10" placeholder="Deja tus comentarios aquí y te contactaremos a la brevedad :)"></textarea>
+            </div>
+            <div class="col-12 mt-2">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
 
-        <form class="row rounded p-5 contact-container">
-          <div class="col-md-6">
-            <label for="inputNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="inputNombre">
-          </div>
-          <div class="col-md-6">
-            <label for="inputApellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="inputApellido">
-          </div>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="email@here.com">
-          </div>
-          <div class="col-md-6">
-            <label for="inputState" class="form-label">Tipo de consulta</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>Recomendacion/Mejoras</option>
-              <option>Quiero una demo...</option>
-              <option>Otros</option>
-            </select>
-          </div>
-          <div class="col-mb-3">
-            <label for="inputComments">Deja tus comentarios aqui</label>
-            <textarea class="form-control" name="" id="" rows="10" placeholder="Deja tus comentarios aquí y te contactaremos a la brevedad :)"></textarea>
-          </div>
-          <div class="col-12 mt-2">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
 
       </section>
     </main>
