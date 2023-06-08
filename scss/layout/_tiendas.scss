@@ -1,0 +1,76 @@
+.store-card {
+  @include cards(all 0.3s, 100%, 10px, 10px, $promo-card-bg-color);
+
+  &:hover {
+    @include shadow_card();
+  }
+  .svg-store {
+    fill: #ffffff;
+    height: 45px;
+    align-self: center;
+  }
+  .svg-share {
+    height: 25px;
+    fill: #ff0000;
+    border: 1px solid #f4f4f4;
+    border-radius: 15px;
+    padding: 4px;
+    margin-top: 5px;
+  }
+  .svg-share {
+    &:hover {
+      fill: green;
+    }
+  }
+  .content {
+    height: 15%;
+    display: flex;
+  }
+  .content h3 {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    padding-left: 40px;
+    font-weight: bolder;
+    color: #008000;
+  }
+  .svg-share-container {
+    width: 20%;
+    padding-right: 5px;
+    text-align: end;
+  }
+  .store-card-main-container {
+    display: flex;
+    height: 70%;
+  }
+  .store-card-logo-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .store-card-logo-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .store-card-tags-container {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .store-card-description {
+    height: 15%;
+    font-size: large;
+    font-family: $main-font;
+    background-color: #808080;
+    border-radius: 0px 0px 8px 8px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  .store-card-tags-container svg {
+    width: 60%;
+  }
+}

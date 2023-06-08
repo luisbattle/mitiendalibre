@@ -1,0 +1,139 @@
+body {
+  height: 100vh;
+}
+.main-title {
+  font-family: $main-font;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  border-top: 0.1px solid rgb(88, 88, 88);
+  p {
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .svg-fire {
+    fill: #ff0000;
+    height: 45px;
+  }
+  .svg-store {
+    fill: #ffffff;
+    height: 45px;
+    align-self: center;
+  }
+}
+
+// Promo Card
+.promo-card {
+  @include cards(all 0.3s, 100%, 10px, 10px, $promo-card-bg-color);
+
+  &:hover {
+    @include shadow_card();
+  }
+
+  .promo-card-main-container {
+    display: flex;
+    height: 85%;
+    padding-top: 10px;
+  }
+  .promo-card-image-container {
+    width: 60%;
+  }
+  .promo-card-image-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .promo-card-svg-share-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    height: 30%;
+  }
+  .promo-card-price-and-tags {
+    width: 40%;
+  }
+  .promo-card-svg-share {
+    display: flex;
+    height: 25px;
+    fill: #ff0000;
+    background-color: $promo-card-bg-color;
+    border: 1px solid #f4f4f4;
+    border-radius: 15px;
+    padding: 4px;
+  }
+  .promo-card-svg-share:hover {
+    fill: green;
+  }
+  .promo-card-price-and-tags-price {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 1px solid rgb(153, 153, 161);
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .promo-card-price-and-tags-seller {
+    margin-top: 15px;
+    background-color: #ff0000;
+    border-radius: 8px;
+    width: 80%;
+  }
+  .promo-card-svg-store {
+    fill: #ffffff;
+    width: 30%;
+  }
+  .promo-card-price-and-tags-seller-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+  }
+  .promo-card-price-and-tags-seller .seller-name {
+    color: #ffffff;
+    align-self: center;
+    font-size: smaller;
+  }
+  .promo-card-details {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .promo-card-details p {
+    font-family: $main-font;
+    color: #ffffff;
+    background-color: #808080;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 8px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* SVGs */
+.svg-tags-icons {
+  height: 30px;
+  border-radius: 20px;
+  fill: #ffffff;
+  border: 0.5px solid #d9d9d9;
+  margin: 1px;
+  background-color: #000000;
+  border-color: #d8d8d8;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f5f4f4;
+}

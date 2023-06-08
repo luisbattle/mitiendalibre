@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  width: 100%;
+
+  .nav-link {
+    color: white;
+    padding: 5px;
+  }
+  .nav-item {
+    padding: 2px;
+  }
+  .social-media-icons {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.footer-color p {
+  color: white;
+  font-size: 12px;
+}
+.footer-color {
+  font-family: $main-font;
+  background-color: $footer-bg-color;
+}

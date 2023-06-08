@@ -1,84 +1,82 @@
-/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
-
-/* Bootstrap */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
-/* GLOBAL */
 * {
   margin: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-.m-top-5px {
-  margin-top: 5px;
-}
-.m-bottom-5px {
-  margin-bottom: 5px;
+  padding: 0;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
-a:link {
-  color: white;
-}
-a:hover {
-  color: #ffff00;
-}
-a:visited {
-  text-decoration: none;
-}
 
-/* Navbar */
-
-/* Brand Logo  */
-.bi-shop-logo {
+nav .bi-shop-logo {
   fill: #ffffff;
   height: 30px;
   padding: 2px;
 }
-.brand-title {
+nav .brand-title {
   color: #ffffff;
 }
-
-.bi-house-door {
+nav .bi-house-door {
   height: 30px;
   padding: 2px;
 }
-.bi-shop {
+nav .bi-shop {
   fill: white;
   height: 30px;
   padding: 2px;
 }
-.bi-envelope-at {
+nav .bi-envelope-at {
   fill: white;
   height: 30px;
   padding: 2px;
 }
-.nav-link-active {
+nav .nav-link-active {
   fill: #989898;
   height: 30px;
   border: 1px solid #989898;
   border-radius: 5px;
   padding: 2px;
 }
-.nav-link-inactive {
+nav .nav-link-inactive {
   fill: whitesmoke;
   height: 30px;
   padding: 2px;
 }
 
-/* 
-MAIN
-Tiendas
- */
+footer {
+  position: absolute;
+  width: 100%;
+}
+footer .nav-link {
+  color: white;
+  padding: 5px;
+}
+footer .nav-item {
+  padding: 2px;
+}
+footer .social-media-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-color p {
+  color: white;
+  font-size: 12px;
+}
+
+.footer-color {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #2a2a2a;
+}
+
+body {
+  height: 100vh;
+}
+
 .main-title {
   font-family: "Chakra Petch", sans-serif;
-  /* background-color: #bab9b9; */
-  background-color: #1e1e1efe;
+  background-color: rgba(30, 30, 30, 0.9960784314);
   display: flex;
   justify-content: center;
   border-top: 0.1px solid rgb(88, 88, 88);
@@ -89,212 +87,54 @@ Tiendas
   display: flex;
   align-items: center;
 }
-
-/* SVGs */
-.svg-store {
+.main-title .svg-fire {
+  fill: #ff0000;
+  height: 45px;
+}
+.main-title .svg-store {
   fill: #ffffff;
   height: 45px;
   align-self: center;
 }
-.svg-share {
-  height: 25px;
-  /* fill: #ffff00; */
-  fill: #ff0000;
-  border: 1px solid #f4f4f4;
-  border-radius: 15px;
-  padding: 4px;
-  margin-top: 5px;
-}
-.svg-share:hover {
-  fill: green;
-}
-.svg-fire {
-  fill: #ff0000;
-  height: 45px;
-}
-.svg-contact {
-  fill: #ffffff;
-  height: 45px;
-}
 
-.svg-tags-icons {
-  height: 30px;
-  border-radius: 20px;
-  fill: #ffffff;
-  border: 0.5px solid #d9d9d9;
-  margin: 1px;
-  /* padding: 0%; */
-  background-color: #000000;
-  border-color: #d8d8d8;
-}
-
-/* 
-SECTION 
-*/
-section {
-  /* padding: 10px 10%; */
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: flex-start; */
-  background: #f5f4f4;
-}
-/* Tarjeta */
-.store-card {
-  transition: all 0.3s;
-  opacity: 95%;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: #ffffff;
-}
-.store-card:hover {
-  transition: all 0.3s;
-  opacity: 100%;
-  transform: translateY(-5px);
-  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
-}
-/* Contenido de la tarjeta Tiendas */
-.content {
-  height: 15%;
-  /* margin-top: 5px;
-  margin-bottom: 5px; */
-  display: flex;
-}
-.content h3 {
-  width: 80%;
-  text-align: center;
-  align-self: center;
-  padding-left: 40px;
-  /* padding-top: 10px; */
-  font-weight: bolder;
-  color: #008000;
-}
-.svg-share-container {
-  width: 20%;
-  padding-right: 5px;
-  text-align: end;
-}
-.store-card-main-container {
-  display: flex;
-  height: 70%;
-  /* margin-bottom: 5px; */
-}
-.store-card-logo-container {
-  width: 50%;
-  margin: 0 auto;
-}
-.store-card-logo-container img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-.store-card-tags-container {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.store-card-description {
-  height: 15%;
-  font-size: large;
-  /* text-align: center; */
-  font-family: "Chakra Petch", sans-serif;
-  background-color: #808080;
-  border-radius: 0px 0px 8px 8px;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store-card-tags-container svg {
-  width: 60%;
-}
-
-.store-card-button {
-  width: 25%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #000000;
-  border-radius: 10px;
-  /* padding-top: 3px;
-  padding-bottom: 3px; */
-}
-.store-card-button:hover {
-  width: 25%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #096401;
-  border-radius: 10px;
-}
-
-.store-card-button a:visited {
-  color: white;
-}
-
-/* 
-Tiendas
-*/
-.store-card-container {
-  width: 80%;
-  height: 400px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  display: flex;
-}
-.store-location {
-  max-height: 300px;
-}
-
-/* 
-Promociones 
-*/
 .promo-card {
   transition: all 0.3s;
-  width: 25%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  /* opacity: 70%; */
-  /* background-color: #b9b9b9; */
-  background-color: #ffffff;
+  opacity: 100%;
   border-radius: 10px;
   margin: 10px;
+  background-color: #ffffff;
 }
-
 .promo-card:hover {
   transition: all 0.3s;
   opacity: 100%;
   transform: translateY(-5px);
-  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-
-.promo-card-main-container {
+.promo-card .promo-card-main-container {
   display: flex;
   height: 85%;
   padding-top: 10px;
 }
-.promo-card-image-container {
-  /* margin:5%; */
+.promo-card .promo-card-image-container {
   width: 60%;
 }
-.promo-card-image-container img {
+.promo-card .promo-card-image-container img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.promo-card-svg-share-container {
+.promo-card .promo-card-svg-share-container {
   display: flex;
   justify-content: end;
   padding-right: 5px;
   margin-bottom: 10px;
   height: 30%;
 }
-.promo-card-price-and-tags {
+.promo-card .promo-card-price-and-tags {
   width: 40%;
 }
-.promo-card-svg-share {
+.promo-card .promo-card-svg-share {
   display: flex;
-  /* align-self: flex-end; */
   height: 25px;
   fill: #ff0000;
   background-color: #ffffff;
@@ -302,10 +142,10 @@ Promociones
   border-radius: 15px;
   padding: 4px;
 }
-.promo-card-svg-share:hover {
+.promo-card .promo-card-svg-share:hover {
   fill: green;
 }
-.promo-card-price-and-tags-price {
+.promo-card .promo-card-price-and-tags-price {
   width: 80%;
   height: 20%;
   display: flex;
@@ -318,131 +158,187 @@ Promociones
   border-radius: 10px;
   padding: 2px;
 }
-.promo-card-price-and-tags-seller {
+.promo-card .promo-card-price-and-tags-seller {
   margin-top: 15px;
-  /* background-color:#ffffff; */
-  background-color: red;
+  background-color: #ff0000;
   border-radius: 8px;
   width: 80%;
 }
-.promo-card-svg-store {
-  /* height: 20%; */
-  fill: #f6f636;
+.promo-card .promo-card-svg-store {
+  fill: #ffffff;
   width: 30%;
 }
-.promo-card-price-and-tags-seller-img {
+.promo-card .promo-card-price-and-tags-seller-img {
   display: flex;
   justify-content: center;
   padding-top: 2px;
 }
-.promo-card-price-and-tags-seller .seller-name {
+.promo-card .promo-card-price-and-tags-seller .seller-name {
   color: #ffffff;
-  /* font-weight: bold;   */
   align-self: center;
   font-size: smaller;
 }
-.promo-card-details {
-  height: 15%;
+.promo-card .promo-card-details {
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.promo-card-details p {
+.promo-card .promo-card-details p {
   font-family: "Chakra Petch", sans-serif;
   color: #ffffff;
   background-color: #808080;
   width: 100%;
   height: 100%;
   border-radius: 0px 0px 8px 8px;
-  /* height: 50%; */
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* VISTA PRODUCTO */
+/* SVGs */
+.svg-tags-icons {
+  height: 30px;
+  border-radius: 20px;
+  fill: #ffffff;
+  border: 0.5px solid #d9d9d9;
+  margin: 1px;
+  background-color: #000000;
+  border-color: #d8d8d8;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f5f4f4;
+}
+
+.store-card {
+  transition: all 0.3s;
+  opacity: 100%;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+.store-card:hover {
+  transition: all 0.3s;
+  opacity: 100%;
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.store-card .svg-store {
+  fill: #ffffff;
+  height: 45px;
+  align-self: center;
+}
+.store-card .svg-share {
+  height: 25px;
+  fill: #ff0000;
+  border: 1px solid #f4f4f4;
+  border-radius: 15px;
+  padding: 4px;
+  margin-top: 5px;
+}
+.store-card .svg-share:hover {
+  fill: green;
+}
+.store-card .content {
+  height: 15%;
+  display: flex;
+}
+.store-card .content h3 {
+  width: 80%;
+  text-align: center;
+  align-self: center;
+  padding-left: 40px;
+  font-weight: bolder;
+  color: #008000;
+}
+.store-card .svg-share-container {
+  width: 20%;
+  padding-right: 5px;
+  text-align: end;
+}
+.store-card .store-card-main-container {
+  display: flex;
+  height: 70%;
+}
+.store-card .store-card-logo-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.store-card .store-card-logo-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.store-card .store-card-tags-container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.store-card .store-card-description {
+  height: 15%;
+  font-size: large;
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #808080;
+  border-radius: 0px 0px 8px 8px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.store-card .store-card-tags-container svg {
+  width: 60%;
+}
+
+.contact-container {
+  margin: 0 auto;
+  border: 0.5px solid #d9d9d9;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 75%;
+}
+
+.svg-contact {
+  padding-top: 5px;
+  padding-left: 10px;
+  height: 40px;
+}
+
+.svg-contact {
+  fill: #ffffff;
+  height: 45px;
+}
 
 .product-title {
-  font-family: "Chakra Petch", sans-serif;
-  background-color: #bab9b9;
-  display: flex;
-  justify-content: center;
-}
-.product-title p {
-  margin: 0;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-}
-.image-container {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  border-radius: 8px;
-}
-.product-img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-.product-price {
-  color: #008000;
-  font-size: x-large;
-  font-weight: bolder;
-}
-.store-info p {
-  font-weight: bold;
-}
-.store-info-store-logo {
-  display: flex;
-}
-.store-info-store-logo-img {
-  object-fit: contain;
-  height: 50px;
-}
-.store-info-store-logo a {
-  align-self: center;
-  color: #808080;
-}
-/* FOOTER */
-footer {
-  position: absolute;
-  width: 100%;
-}
-.footer-color {
-  font-family: "Chakra Petch", sans-serif;
-  background-color: #2a2a2a;
-  color: white;
-}
-.footer-color p {
-  color: white;
+  font-weight: 900;
 }
 
-footer .nav-link {
-  color: white;
-  padding: 5px;
+.product-price {
+  font-weight: 900;
+  font-size: x-large;
+  color: red;
 }
-footer .nav-item {
-  padding: 2px;
-}
-.social-media-icons {
-  width: 25px;
-  height: 25px;
+
+.store-info-store-logo-img {
+  width: 100px;
 }
 
 /* 
 MEDIAS QUERIES 
 mobile first
 */
-
 /* Mobile*/
 @media (min-width: 300px) {
   /* cuando despliega el menu dar padding en mobile */
   .nav-item {
     padding: 10px 0;
   }
-
   section {
     margin: 0;
     padding: 0px;
@@ -466,12 +362,11 @@ mobile first
     min-height: 20%;
     max-height: 25%;
   }
-
   /* CONTACTO */
   .contact-container {
     margin: 0 auto;
     border: 0.5px solid #d9d9d9;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     width: 75%;
   }
@@ -480,10 +375,12 @@ mobile first
     padding-left: 10px;
     height: 40px;
   }
-
   /* Vista Producto */
   .product-title {
-    height: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .product-title p {
     font-size: large;
@@ -492,7 +389,6 @@ mobile first
   .contact-container {
     width: 100%;
   }
-
   /* FOOTER */
   .social-media-icons {
     width: 25px;
@@ -538,9 +434,6 @@ mobile first
   .icon-shops {
     display: none;
   }
-  .icon-quiero {
-    display: none;
-  }
   .icon-contact {
     display: none;
   }
@@ -554,7 +447,6 @@ mobile first
     height: 20px;
   }
 }
-
 /* Desktop*/
 @media (min-width: 1024px) {
   section {
@@ -600,9 +492,6 @@ mobile first
   .icon-shops {
     display: inline-block;
   }
-  .icon-quiero {
-    display: inline-block;
-  }
   .icon-contact {
     display: inline-block;
   }
@@ -613,3 +502,5 @@ mobile first
     margin-bottom: 10px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,180 @@
+/* 
+MEDIAS QUERIES 
+mobile first
+*/
+
+/* Mobile*/
+@media (min-width: 300px) {
+  /* cuando despliega el menu dar padding en mobile */
+  .nav-item {
+    padding: 10px 0;
+  }
+
+  section {
+    margin: 0;
+    padding: 0px;
+  }
+  .main-title {
+    height: 50px;
+  }
+  .main-title p {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .store-card {
+    width: 100%;
+    min-height: 220px;
+  }
+  .promo-card {
+    width: 100%;
+    min-height: 220px;
+  }
+  .promo-card-price-and-tags-seller {
+    min-height: 20%;
+    max-height: 25%;
+  }
+
+  /* CONTACTO */
+  .contact-container {
+    margin: 0 auto;
+    border: 0.5px solid #d9d9d9;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+    width: 75%;
+  }
+  .svg-contact {
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 40px;
+  }
+
+  /* Vista Producto */
+  .product-title {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-title p {
+    font-size: large;
+    font-weight: bold;
+  }
+  .contact-container {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .social-media-icons {
+    width: 25px;
+    height: 25px;
+  }
+}
+/* Tablet*/
+@media (min-width: 768px) {
+  section {
+    padding: 10px 10%;
+  }
+  .main-title {
+    height: 50px;
+  }
+  .main-title p {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .store-card {
+    width: 30%;
+    min-width: 250px;
+    /* background-color: #000000; */
+  }
+  .promo-card {
+    width: 45%;
+  }
+  .svg-fire {
+    padding-top: 5px;
+    height: 40px;
+  }
+  .svg-contact {
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 40px;
+  }
+  .svg-store {
+    padding-top: 5px;
+    height: 40px;
+  }
+  .icon-home {
+    display: none;
+  }
+  .icon-shops {
+    display: none;
+  }
+
+  .icon-contact {
+    display: none;
+  }
+  /* CONTACTO */
+  .contact-container {
+    width: 75%;
+  }
+  /* FOOTER */
+  .social-media-icons {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Desktop*/
+@media (min-width: 1024px) {
+  section {
+    padding: 10px 10%;
+  }
+  .main-title {
+    height: 50px;
+  }
+  .main-title p {
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .store-card {
+    width: 30%;
+    /* background-color: #000000; */
+  }
+  .promo-card {
+    width: 30%;
+  }
+  .promo-card-price-and-tags-seller {
+    min-height: 18%;
+    max-height: 25%;
+  }
+  .main-title {
+    min-height: 30px;
+  }
+  .svg-store {
+    padding: 2px;
+    height: 50px;
+  }
+  .svg-fire {
+    padding: 2px;
+    height: 50px;
+  }
+  .svg-contact {
+    padding: 5px;
+    padding-left: 10px;
+    height: 45px;
+  }
+  .icon-home {
+    display: inline-block;
+  }
+  .icon-shops {
+    display: inline-block;
+  }
+  .icon-contact {
+    display: inline-block;
+  }
+  /* CONTACTO */
+  .contact-container {
+    width: 55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

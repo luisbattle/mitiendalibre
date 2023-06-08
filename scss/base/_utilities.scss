@@ -1,0 +1,34 @@
+@mixin cards(
+  $transition,
+  $opacity,
+  $border-radius,
+  $margin,
+  $background-color
+) {
+  // store-card
+  // transition: all 0.3s;
+  // opacity: 95%;
+  // border-radius: 10px;
+  // margin: 10px;
+  // background-color: #ffffff;
+  transition: $transition;
+  opacity: $opacity;
+  border-radius: $border-radius;
+  margin: $margin;
+  background-color: $background-color;
+
+  // promo-card
+  //   transition: all 0.3s;
+  //   opacity: 95%;
+  //   border-radius: 10px;
+  //   margin: 10px;
+  //   width: 25%;
+  //   background-color: $promo-card-bg-color;
+}
+
+@mixin shadow_card {
+  transition: all 0.3s;
+  opacity: 100%;
+  transform: translateY(-5px);
+  box-shadow: $card-box-shadow;
+}
