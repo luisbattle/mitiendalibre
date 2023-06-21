@@ -208,8 +208,7 @@
                 <p class="pt-2 m-2">Informacion de la tienda</p>
                 <div class="store-info-store-logo">
                   <img
-                    src="../assets/samsung-logo.png"
-                    alt="Samsung logo"
+                    src="../assets/samsung/samsung-logo.png"
                     class="rounded store-info-store-logo-img"
                   />
                   <a href="tienda-samsung.html">Tienda Oficial Samsung</a>
@@ -229,7 +228,12 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="button" class="btn btn-outline-dark">
+                <div id="liveAlertPlaceholder"></div>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  id="liveAlertBtn"
+                >
                   Comprar
                 </button>
               </div>
@@ -348,5 +352,27 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+
+      const alert = (message, type) => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [
+          `<div class="alert alert-success alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          "</div>",
+        ].join("");
+
+        alertPlaceholder.append(wrapper);
+      };
+
+      const alertTrigger = document.getElementById("liveAlertBtn");
+      if (alertTrigger) {
+        alertTrigger.addEventListener("click", () => {
+          alert("Gracias por tu compra :)");
+        });
+      }
+    </script>
   </body>
 </html>
