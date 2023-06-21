@@ -1,0 +1,72 @@
+section {
+  margin-bottom: 0;
+  .row {
+    padding: 0px;
+    margin: 0;
+  }
+  .store-logo-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .store-logo {
+    border-radius: 100px;
+    transition: box-shadow, transform 3s;
+    &:hover {
+      transition: all 3s;
+      box-shadow: 0px 10px 50px 0px rgb(143, 143, 143);
+      transform: rotate3d(1, 2, 3, 360deg);
+    }
+  }
+  .store-description {
+    font-size: larger;
+  }
+
+  .store-img-container {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      border-radius: 5px;
+      object-fit: contain;
+      overflow: hidden;
+      box-shadow: 0px 10px 50px 0px rgb(143, 143, 143);
+    }
+  }
+  .store-button-container {
+    margin: 15px;
+  }
+}
+
+//   SUCURSALES
+.stores-section {
+  background-color: rgb(236, 236, 236);
+  padding-bottom: 15px;
+  h2 {
+    padding: 10px;
+    color: rgb(152, 152, 152);
+  }
+  img {
+    // width: 30%;
+    margin: 10px;
+    border: solid 1px white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px 0px rgb(74, 74, 74);
+    transition: all 1s;
+    filter: grayscale(90%);
+    &:hover {
+      transition: all 1s;
+      filter: grayscale(0%);
+      border: solid 1px rgb(143, 143, 143);
+    }
+  }
+
+  .sucursal {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgb(219, 218, 218);
+  }
+}

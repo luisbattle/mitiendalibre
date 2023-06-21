@@ -63,6 +63,13 @@ mobile first
     width: 100%;
   }
 
+  /* VISTA TIENDA */
+  .stores-section {
+    img {
+      width: 80%;
+    }
+  }
+
   /* FOOTER */
   .social-media-icons {
     width: 25px;
@@ -116,6 +123,14 @@ mobile first
   .contact-container {
     width: 75%;
   }
+
+  /* VISTA TIENDA */
+  .stores-section {
+    img {
+      width: 30%;
+    }
+  }
+
   /* FOOTER */
   .social-media-icons {
     width: 20px;
@@ -176,5 +191,12 @@ mobile first
     width: 55%;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  /* VISTA TIENDA */
+  .stores-section {
+    img {
+      width: 30%;
+    }
   }
 }
